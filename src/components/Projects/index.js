@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './index.scss';
 import React from 'react';
 import ImgPom from '../../assets/images/pom.png';
@@ -22,11 +21,11 @@ const Projects = () => {
                     alt = 'pom-img' 
                 />*/}
 
-                <ShowInfo img = {ImgPom} imgalt = "pom-img" imgname = "img-pom"></ShowInfo>
-                <ShowInfo img = {ImgDQN} imgalt = "dqn-img" imgname = "img-dqn"></ShowInfo>
-                <ShowInfo img = {ImgIOT} imgalt = "iot-img" imgname = "img-iot"></ShowInfo>
-                <ShowInfo img = {ImgEpilog} imgalt = "epilog-img" imgname = "img-epilog"></ShowInfo>
-                <ShowInfo img = {ImgCPU} imgalt = "cpu-img" imgname = "img-cpu"></ShowInfo>
+                <ShowInfo img = {ImgPom} imgalt = "pom-img" ></ShowInfo>
+                <ShowInfo img = {ImgDQN} imgalt = "dqn-img" ></ShowInfo>
+                <ShowInfo img = {ImgIOT} imgalt = "iot-img" ></ShowInfo>
+                <ShowInfo img = {ImgEpilog} imgalt = "epilog-img"></ShowInfo>
+                <ShowInfo img = {ImgCPU} imgalt = "cpu-img" ></ShowInfo>
                 {/*<img 
                     src = {ImgDQN} 
                     className='img-dqn' 
@@ -75,7 +74,7 @@ class ShowInfo extends React.Component {
     };
   
     render() {
-      const { img, imgname, imgalt } = this.props;
+      const { img, imgalt } = this.props;
   
       return (
         <>
