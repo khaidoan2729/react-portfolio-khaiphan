@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './index.scss';
-import { useState } from 'react';
 
 const Home = () => {
 
